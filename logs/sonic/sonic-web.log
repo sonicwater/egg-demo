@@ -1,0 +1,1667 @@
+2020-08-12 16:24:41,071 ERROR 15095 [-/::1/-/8ms GET /news] nodejs.TypeError: Cannot destructure property `serverUrl` of 'undefined' or 'null'.
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:6:11)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:7:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 15095
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-13 13:38:53,527 WARN 1810 [-/::1/-/32ms PUT /news] missing csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 13:38:53,528 WARN 1810 [-/::1/-/34ms PUT /news] nodejs.ForbiddenError: missing csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:13:70)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "missing csrf token"
+pid: 1810
+hostname: localhost
+
+2020-08-13 13:39:24,706 WARN 1810 [-/::1/-/5ms POST /form] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 13:39:24,706 WARN 1810 [-/::1/-/5ms POST /form] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 1810
+hostname: localhost
+
+2020-08-13 14:00:31,217 WARN 1911 [-/::1/-/26ms POST /user?username=abc@abc.com&password=111111&re-password=111111] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 14:00:31,219 WARN 1911 [-/::1/-/28ms POST /user?username=abc@abc.com&password=111111&re-password=111111] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 1911
+hostname: localhost
+
+2020-08-13 14:02:28,206 WARN 1934 [-/::1/-/13ms POST /user?username=abc@abc.com&password=111111&re-password=111111] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 14:02:28,207 WARN 1934 [-/::1/-/14ms POST /user?username=abc@abc.com&password=111111&re-password=111111] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 1934
+hostname: localhost
+
+2020-08-13 14:04:46,008 WARN 1938 [-/::1/-/12ms POST /user?username=abc@abc.com&password=111111&re-password=111111] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 14:04:46,010 WARN 1938 [-/::1/-/13ms POST /user?username=abc@abc.com&password=111111&re-password=111111] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 1938
+hostname: localhost
+
+2020-08-13 14:06:16,765 WARN 1958 [-/::1/-/12ms POST /user?username=abc@abc.com&password=111111&re-password=111111] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 14:06:16,766 WARN 1958 [-/::1/-/14ms POST /user?username=abc@abc.com&password=111111&re-password=111111] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 1958
+hostname: localhost
+
+2020-08-13 14:07:33,292 WARN 1985 [-/::1/-/12ms POST /user?username=abc@abc.com&password=111111&re-password=111111] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 14:07:33,293 WARN 1985 [-/::1/-/14ms POST /user?username=abc@abc.com&password=111111&re-password=111111] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 1985
+hostname: localhost
+
+2020-08-13 15:00:38,610 WARN 2789 [-/::1/-/15ms POST /test] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:00:38,611 WARN 2789 [-/::1/-/16ms POST /test] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2789
+hostname: localhost
+
+2020-08-13 15:00:53,913 WARN 2789 [-/::1/-/0ms POST /news] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:00:53,914 WARN 2789 [-/::1/-/0ms POST /news] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2789
+hostname: localhost
+
+2020-08-13 15:01:26,170 WARN 2789 [-/::1/-/1ms POST /news] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:01:26,170 WARN 2789 [-/::1/-/1ms POST /news] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2789
+hostname: localhost
+
+2020-08-13 15:01:46,671 WARN 2809 [-/::1/-/14ms POST /news] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:01:46,673 WARN 2809 [-/::1/-/15ms POST /news] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2809
+hostname: localhost
+
+2020-08-13 15:01:52,103 WARN 2809 [-/::1/-/1ms POST /news?id=1] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:01:52,104 WARN 2809 [-/::1/-/2ms POST /news?id=1] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2809
+hostname: localhost
+
+2020-08-13 15:04:32,676 WARN 2828 [-/::1/-/14ms POST /news?id=1] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:04:32,678 WARN 2828 [-/::1/-/15ms POST /news?id=1] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2828
+hostname: localhost
+
+2020-08-13 15:05:59,911 WARN 2852 [-/::1/-/12ms POST /news?news_id=1] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:05:59,913 WARN 2852 [-/::1/-/14ms POST /news?news_id=1] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2852
+hostname: localhost
+
+2020-08-13 15:10:17,793 WARN 2857 [-/::1/-/13ms POST /news?news_id=1] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:10:17,795 WARN 2857 [-/::1/-/14ms POST /news?news_id=1] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2857
+hostname: localhost
+
+2020-08-13 15:10:43,767 WARN 2857 [-/::1/-/1ms POST /news?news_id=1] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:10:43,767 WARN 2857 [-/::1/-/1ms POST /news?news_id=1] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2857
+hostname: localhost
+
+2020-08-13 15:13:33,536 WARN 2890 [-/::1/-/3ms POST /news?news_id=1] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:13:33,539 WARN 2890 [-/::1/-/5ms POST /news?news_id=1] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2890
+hostname: localhost
+
+2020-08-13 15:14:58,660 WARN 2890 [-/::1/-/11ms POST /news] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:14:58,660 WARN 2890 [-/::1/-/11ms POST /news] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2890
+hostname: localhost
+
+2020-08-13 15:15:33,001 ERROR 2890 [-/::1/-/6ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2890
+hostname: localhost
+
+2020-08-13 15:16:05,225 ERROR 2891 [-/::1/-/14ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2891
+hostname: localhost
+
+2020-08-13 15:18:03,147 ERROR 2925 [-/::1/-/14ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2925
+hostname: localhost
+
+2020-08-13 15:18:10,332 ERROR 2925 [-/::1/-/1ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2925
+hostname: localhost
+
+2020-08-13 15:19:11,115 ERROR 2927 [-/::1/-/2ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2927
+hostname: localhost
+
+2020-08-13 15:19:49,940 ERROR 2927 [-/::1/-/0ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2927
+hostname: localhost
+
+2020-08-13 15:21:43,397 ERROR 2932 [-/::1/-/2ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2932
+hostname: localhost
+
+2020-08-13 15:21:47,796 ERROR 2932 [-/::1/-/4ms POST /news] nodejs.ReferenceError: id is not defined
+    at NewsService.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/news.js:13:5)
+    at NewsController.list (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/news.js:5:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+
+pid: 2932
+hostname: localhost
+
+2020-08-13 15:23:43,527 WARN 2950 [-/::1/-/4ms POST /news] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:23:43,529 WARN 2950 [-/::1/-/5ms POST /news] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2950
+hostname: localhost
+
+2020-08-13 15:32:07,506 WARN 2968 [-/127.0.0.1/-/6ms POST /news] invalid csrf token. See https://eggjs.org/zh-cn/core/security.html#安全威胁csrf的防范
+2020-08-13 15:32:07,508 WARN 2968 [-/127.0.0.1/-/8ms POST /news] nodejs.ForbiddenError: invalid csrf token
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.assertCsrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/app/extend/context.js:162:32)
+    at csrf (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/csrf.js:33:9)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at overrideMethod (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-override/index.js:38:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+message: "invalid csrf token"
+pid: 2968
+hostname: localhost
+
+2020-08-13 18:17:21,182 INFO 3824 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:17:40,096 ERROR 3824 [-/127.0.0.1/-/38ms POST /user/login] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:22:39)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+
+pid: 3824
+hostname: localhost
+
+2020-08-13 18:20:29,238 INFO 3826 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:20:44,138 INFO 3826 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:20:44,148 ERROR 3826 [-/127.0.0.1/-/58ms POST /user/login] nodejs.SequelizeDatabaseError: Unknown column 'Users.user' in 'where clause'
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.select (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:1126:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:1759:34
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at Function.findAll (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:1757:8)
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:22:39)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'Users.user' in 'where clause'","sql":"SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'Users.user' in 'where clause'","sql":"SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';"}
+sql: "SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';"
+parameters: undefined
+pid: 3826
+hostname: localhost
+
+2020-08-13 18:21:08,801 INFO 3837 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:21:13,638 INFO 3837 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:21:13,645 ERROR 3837 [-/127.0.0.1/-/27ms POST /user/login] nodejs.SequelizeDatabaseError: Unknown column 'Users.user' in 'where clause'
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Query.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Query.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.select (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:1126:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:1759:34
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at Function.findAll (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:1757:8)
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:22:39)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:45)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:11)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'Users.user' in 'where clause'","sql":"SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';"}
+original: {"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","sqlMessage":"Unknown column 'Users.user' in 'where clause'","sql":"SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';"}
+sql: "SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';"
+parameters: undefined
+pid: 3837
+hostname: localhost
+
+2020-08-13 18:23:22,499 INFO 3838 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:23:29,971 INFO 3838 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:25:18,929 INFO 3839 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:25:20,658 INFO 3839 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:26:37,162 INFO 3840 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:26:52,457 INFO 3840 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-13 18:27:03,174 INFO 3840 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '96e79218965eb72c92a549dd5a330112';
+2020-08-13 18:27:07,580 INFO 3840 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-13 18:33:00,186 INFO 3848 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:33:02,954 INFO 3848 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:39:40,271 INFO 3854 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:39:43,899 INFO 3855 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:41:18,169 INFO 3858 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:42:05,847 INFO 3859 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:43:41,008 INFO 3860 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:44:07,207 INFO 3861 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:44:12,886 INFO 3861 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:45:09,644 INFO 3862 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:45:14,722 INFO 3862 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:46:10,492 INFO 3862 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:46:10,751 INFO 3863 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:46:16,407 INFO 3863 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:46:17,102 INFO 3864 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:46:52,936 INFO 3865 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:46:53,820 INFO 3865 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:47:00,019 INFO 3865 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:47:00,021 ERROR 3865 [-/127.0.0.1/-/5ms POST /user/login] nodejs.TypeError: Cannot read property 'user_id' of undefined
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:33:25)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3865
+hostname: localhost
+
+2020-08-13 18:47:12,535 INFO 3865 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:47:30,511 INFO 3865 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:47:30,512 ERROR 3865 [-/127.0.0.1/-/8ms POST /user/login] nodejs.TypeError: Cannot read property 'user_id' of undefined
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:33:25)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3865
+hostname: localhost
+
+2020-08-13 18:48:30,773 INFO 3867 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:48:33,684 INFO 3867 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:48:39,906 INFO 3867 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:49:16,378 INFO 3868 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:49:17,080 INFO 3868 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:49:19,294 INFO 3868 [egg-sequelize](0ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:49:19,296 ERROR 3868 [-/127.0.0.1/-/5ms POST /user/login] nodejs.TypeError: Cannot read property 'user_id' of undefined
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:30:16)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3868
+hostname: localhost
+
+2020-08-13 18:49:37,904 INFO 3868 [egg-sequelize](0ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:49:37,905 ERROR 3868 [-/127.0.0.1/-/8ms POST /user/login] nodejs.TypeError: Cannot read property 'user_id' of undefined
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:30:16)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3868
+hostname: localhost
+
+2020-08-13 18:49:38,285 INFO 3869 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:50:03,379 INFO 3870 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:51:02,183 INFO 3871 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:51:05,177 INFO 3871 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:51:05,180 ERROR 3871 [-/127.0.0.1/-/22ms POST /user/login] nodejs.TypeError: Cannot read property 'user_id' of undefined
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:36:25)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3871
+hostname: localhost
+
+2020-08-13 18:51:09,709 INFO 3871 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:51:26,906 INFO 3872 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:51:33,057 INFO 3873 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:51:33,433 INFO 3873 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:51:37,407 INFO 3873 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:51:40,790 INFO 3873 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:51:45,959 INFO 3873 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:51:49,305 INFO 3873 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:53:20,144 INFO 3874 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:54:59,527 INFO 3875 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:55:04,453 INFO 3875 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:55:04,457 ERROR 3875 [-/127.0.0.1/-/25ms POST /user/login] nodejs.ReferenceError: app is not defined
+    at UserService.getToken (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:85:8)
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:40:21)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3875
+hostname: localhost
+
+2020-08-13 18:56:32,368 INFO 3875 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:56:32,370 ERROR 3875 [-/127.0.0.1/-/8ms POST /user/login] nodejs.ReferenceError: app is not defined
+    at UserService.getToken (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:85:8)
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:40:21)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:7:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 3875
+hostname: localhost
+
+2020-08-13 18:56:32,848 INFO 3876 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:57:48,311 INFO 3877 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 18:57:51,950 INFO 3877 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 18:57:55,786 INFO 3877 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-13 18:57:59,149 INFO 3877 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:00:04,103 INFO 3878 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:02:02,676 INFO 3899 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:02:05,129 INFO 3899 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:02:48,160 INFO 3904 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:02:49,150 INFO 3904 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:04:17,161 INFO 3905 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:05:03,458 INFO 3906 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:06:39,862 INFO 3907 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:06:49,762 INFO 3908 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:06:54,932 INFO 3908 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:07:30,773 INFO 3908 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:07:59,143 INFO 3909 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:08:05,924 INFO 3909 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:12:10,847 INFO 3912 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:12:18,516 INFO 3912 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-13 19:13:31,797 INFO 3919 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-13 19:13:58,972 INFO 3919 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-13 19:14:08,943 INFO 3919 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '7ec28f0d5c8a87b72e16365b208c832c';
+2020-08-13 19:14:12,262 INFO 3919 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-13 19:14:18,185 INFO 3919 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '7ec28f0d5c8a87b72e16365b208c832c';
+2020-08-13 19:14:21,846 INFO 3919 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 09:59:56,675 INFO 1453 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 10:00:59,152 INFO 1453 [egg-sequelize](11ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 10:21:17,089 INFO 1453 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 13:56:53,062 INFO 2009 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:05:53,025 INFO 2066 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:06:03,030 WARN 2066 [-/127.0.0.1/-/33ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:13:14)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2066
+hostname: bogon
+
+2020-08-14 14:08:22,373 INFO 2067 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:09:08,743 INFO 2067 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'a' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:09:15,779 INFO 2067 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:09:21,678 WARN 2067 [-/127.0.0.1/-/1ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:14:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2067
+hostname: bogon
+
+2020-08-14 14:13:24,857 INFO 2069 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:14:57,839 INFO 2070 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:15:43,584 INFO 2071 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:16:59,104 INFO 2072 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:16:59,353 WARN 2072 [-/127.0.0.1/-/13ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:14:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2072
+hostname: bogon
+
+2020-08-14 14:17:09,147 INFO 2072 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:17:09,150 ERROR 2072 [-/127.0.0.1/-/15ms POST /user/login] nodejs.InternalServerError: unknown error
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at UserService.checkSuccess (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:100:21)
+    at UserService.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:27:10)
+    at async UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:15:17)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+message: "unknown error"
+pid: 2072
+hostname: bogon
+
+2020-08-14 14:22:10,592 INFO 2077 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:22:24,997 INFO 2077 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:23:03,276 INFO 2082 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:23:13,547 INFO 2082 [egg-sequelize](3ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:24:36,819 INFO 2082 [egg-sequelize](0ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:24:36,854 INFO 2084 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:25:52,996 WARN 2084 [-/127.0.0.1/-/15ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:14:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2084
+hostname: bogon
+
+2020-08-14 14:27:26,571 INFO 2086 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:27:29,086 WARN 2086 [-/127.0.0.1/-/15ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:14:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2086
+hostname: bogon
+
+2020-08-14 14:28:17,621 INFO 2087 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:28:20,091 INFO 2087 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:29:20,425 INFO 2087 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin1' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 14:29:57,607 WARN 2087 [-/127.0.0.1/-/2ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:14:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2087
+hostname: bogon
+
+2020-08-14 14:30:16,002 INFO 2087 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 14:37:44,901 INFO 2089 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:38:14,317 INFO 2090 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:39:11,894 INFO 2091 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:40:57,360 INFO 2095 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:46:42,992 INFO 2095 [egg-sequelize](3ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 14:46:47,946 INFO 2095 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic1' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 14:47:18,303 INFO 2095 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 14:48:56,409 INFO 2102 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:49:02,883 WARN 2102 [-/127.0.0.1/-/16ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:14:21)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2102
+hostname: bogon
+
+2020-08-14 14:49:41,057 INFO 2103 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:49:43,763 WARN 2103 [-/127.0.0.1/-/15ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:15:21)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2103
+hostname: bogon
+
+2020-08-14 14:53:24,235 INFO 2106 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:57:46,438 INFO 2110 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:57:48,863 WARN 2110 [-/127.0.0.1/-/13ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:15:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2110
+hostname: bogon
+
+2020-08-14 14:59:14,205 INFO 2111 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 14:59:20,510 WARN 2111 [-/127.0.0.1/-/15ms POST /user/login] nodejs.UnprocessableEntityError: Validation Failed
+    at Object.throw (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/lib/context.js:97:11)
+    at Object.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-validate/app/extend/context.js:14:17)
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:16:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+message: "Validation Failed"
+code: "invalid_param"
+errors: [{"message":"should not be empty","code":"invalid","field":"username"}]
+pid: 2111
+hostname: bogon
+
+2020-08-14 15:00:42,636 INFO 2112 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:28:40,060 INFO 2185 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:29:10,229 INFO 2189 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:29:10,468 INFO 2189 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = '' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:30:00,279 INFO 2189 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:31:02,407 INFO 2191 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:33:48,198 INFO 2191 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = '是' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:35:31,893 INFO 2194 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:36:15,655 INFO 2198 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:36:17,956 INFO 2198 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = '是' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:36:39,336 INFO 2198 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:43:42,261 INFO 2198 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic1' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:43:59,386 INFO 2198 [egg-sequelize](0ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:53:29,578 INFO 2214 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:53:32,999 INFO 2214 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:55:24,709 INFO 2226 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:55:57,914 INFO 2226 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:56:14,529 INFO 2229 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:57:37,898 INFO 2231 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 15:58:08,337 INFO 2231 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 15:58:24,659 INFO 2231 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 16:25:37,815 INFO 2336 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:25:41,997 ERROR 2336 [-/127.0.0.1/-/14ms POST /login] nodejs.ReferenceError: debug is not defined
+    at Strategy._verify (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app.js:33:5)
+    at Strategy.authenticate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/passport-local/lib/strategy.js:88:12)
+    at attempt (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/passport/lib/middleware/authenticate.js:348:16)
+    at authenticate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/passport/lib/middleware/authenticate.js:349:7)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:83:7
+    at new Promise (<anonymous>)
+    at Object.passportAuthenticate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:77:11)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 2336
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 16:28:00,996 INFO 2337 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:29:33,297 INFO 2338 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:29:47,406 INFO 2338 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 16:32:31,408 INFO 2341 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:32:59,842 INFO 2342 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:33:27,047 INFO 2342 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 16:47:19,157 INFO 2346 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:48:08,243 INFO 2347 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:48:18,926 INFO 2348 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:49:36,870 INFO 2349 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:50:25,804 INFO 2372 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:50:44,727 INFO 2372 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 16:52:21,870 WARN 2372 [-/127.0.0.1/-/2ms POST /user] nodejs.UnauthorizedError: invalid signature
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:117:18
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:133:14
+    at getSecret (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:90:14)
+    at Object.module.exports [as verify] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:94:10)
+    at decoded (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+name: "UnauthorizedError"
+message: "invalid signature"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid signature"}
+pid: 2372
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 16:52:44,844 INFO 2372 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 16:53:06,117 WARN 2372 [-/127.0.0.1/-/2ms POST /user] nodejs.UnauthorizedError: invalid token
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:75:12)
+    at decoded (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+name: "UnauthorizedError"
+message: "invalid token"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid token"}
+pid: 2372
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 16:55:05,708 INFO 2373 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:55:35,226 INFO 2374 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:55:51,801 INFO 2375 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:56:46,852 INFO 2376 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 16:57:42,661 INFO 2376 [egg-sequelize](2ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 16:58:10,749 WARN 2376 [-/127.0.0.1/-/1ms POST /user] nodejs.UnauthorizedError: invalid token
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:75:12)
+    at decoded (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+name: "UnauthorizedError"
+message: "invalid token"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid token"}
+pid: 2376
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 16:58:32,027 INFO 2376 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:10:22,222 INFO 2381 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:11:26,937 INFO 2385 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:11:29,185 ERROR 2385 [-/127.0.0.1/-/16ms POST /user/login] nodejs.TypeError: ctx.service.user.isValidUser is not a function
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:21:46)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 2385
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:12:11,163 INFO 2387 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:21:35,007 INFO 2392 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:22:01,816 INFO 2393 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:22:39,347 INFO 2394 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:23:03,675 INFO 2395 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:26:16,351 INFO 2403 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:26:23,456 ERROR 2403 [-/127.0.0.1/-/11ms GET /user] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:93:33)
+    at UserController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:40:39)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+
+pid: 2403
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:26:48,111 INFO 2435 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:26:54,490 ERROR 2435 [-/127.0.0.1/-/6ms GET /user] nodejs.TypeError: Cannot read property 'findAll' of undefined
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:93:33)
+    at UserController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:40:39)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+
+pid: 2435
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:27:40,892 INFO 2436 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:27:41,419 INFO 2436 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:27:54,138 INFO 2436 [egg-sequelize](3ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:27:58,561 INFO 2436 [egg-sequelize](7ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`id` = '1';
+2020-08-14 17:29:04,457 INFO 2436 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`id` = '1';
+2020-08-14 17:29:05,811 INFO 2437 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:29:16,356 INFO 2437 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:29:18,047 INFO 2437 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:29:21,510 INFO 2437 [egg-sequelize](1ms) Executed (default): SELECT `id`, `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`id` = '2';
+2020-08-14 17:30:06,345 INFO 2439 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:31:40,202 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:31:42,740 INFO 2440 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '2';
+2020-08-14 17:31:48,029 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:31:53,072 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-14 17:33:35,129 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:33:42,632 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:34:20,514 WARN 2440 [-/127.0.0.1/-/1ms GET /user/7d24545a716b4f9fb506c6a6582f838d] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 2440
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:34:24,827 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:36:44,940 INFO 2440 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:36:44,945 INFO 2440 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:38:19,510 INFO 2440 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:38:19,514 INFO 2440 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:38:19,682 INFO 2443 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:40:02,741 INFO 2445 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:40:03,073 INFO 2445 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:40:03,080 INFO 2445 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:41:26,786 INFO 2446 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:41:27,759 INFO 2446 [egg-sequelize](3ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:41:27,766 INFO 2446 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:41:43,163 INFO 2446 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:41:43,167 INFO 2446 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic1' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:42:08,488 INFO 2448 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:42:29,263 INFO 2449 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:43:57,013 INFO 2450 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:44:01,934 INFO 2450 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:44:06,126 INFO 2450 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:44:06,128 ERROR 2450 [-/127.0.0.1/-/7ms POST /user/login] nodejs.ReferenceError: data is not defined
+    at UserController.login (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:24:21)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2450
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:45:12,404 INFO 2451 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:45:21,323 INFO 2451 [egg-sequelize](4ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:45:38,407 INFO 2451 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:45:43,006 INFO 2451 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:45:50,775 INFO 2452 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:46:10,255 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:46:30,704 INFO 2453 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:46:30,714 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = '21232f297a57a5a743894a0e4a801fc3';
+2020-08-14 17:46:39,193 INFO 2453 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:46:39,197 INFO 2453 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'admin' AND `Users`.`password` = 'e00cf25ad42683b3df678c61f42c6bda';
+2020-08-14 17:46:48,552 INFO 2453 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:46:52,338 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:47:07,508 INFO 2453 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:47:07,511 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`name` = 'sonic' AND `Users`.`password` = '5f8591a3d4fe06393cad53edff27ba05';
+2020-08-14 17:47:29,932 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:47:35,046 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7';
+2020-08-14 17:47:39,143 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:47:54,916 INFO 2453 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:51:59,010 INFO 2454 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:52:58,489 INFO 2455 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:53:08,243 INFO 2455 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:53:08,247 ERROR 2455 [-/127.0.0.1/-/17ms GET /user/7d24545a716b4f9fb506c6a6582f838d] nodejs.ReferenceError: Cannot access 'res' before initialization
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:103:37)
+    at async UserController.show (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:53:16)
+    at async middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2455
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:54:50,646 INFO 2456 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:54:51,240 INFO 2456 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:54:51,243 ERROR 2456 [-/127.0.0.1/-/19ms GET /user/7d24545a716b4f9fb506c6a6582f838d] nodejs.ReferenceError: Cannot access 'res' before initialization
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:104:38)
+    at async UserController.show (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:53:16)
+    at async middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2456
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:55:02,885 INFO 2456 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:55:08,372 INFO 2456 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-14 17:55:08,373 ERROR 2456 [-/127.0.0.1/-/4ms GET /user/57c4dda0b42511e999baa1190ae09435] nodejs.ReferenceError: Cannot access 'res' before initialization
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:104:38)
+    at async UserController.show (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:53:16)
+    at async middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2456
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:55:31,547 INFO 2456 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-14 17:55:31,548 ERROR 2456 [-/127.0.0.1/-/7ms GET /user/57c4dda0b42511e999baa1190ae09435] nodejs.ReferenceError: Cannot access 'res' before initialization
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:104:38)
+    at async UserController.show (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:53:16)
+    at async middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2456
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 17:55:31,696 INFO 2457 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 17:55:41,801 INFO 2457 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:55:46,993 INFO 2457 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-14 17:56:03,939 INFO 2457 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 17:56:09,915 INFO 2457 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 17:58:55,549 INFO 2481 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:01:44,416 INFO 2509 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:01:46,615 INFO 2509 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 18:12:51,057 INFO 2520 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:12:58,513 INFO 2522 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:14:24,900 INFO 2524 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:15:48,148 INFO 2526 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:15:53,271 ERROR 2526 [-/127.0.0.1/-/8ms GET /user/7d24545a716b4f9fb506c6a6582f838d] nodejs.TypeError: Cannot read property 'cloneDeep' of undefined
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:94:25)
+    at UserController.show (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:53:39)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2526
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 18:16:45,280 INFO 2528 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:16:45,352 ERROR 2528 [-/127.0.0.1/-/8ms GET /user/7d24545a716b4f9fb506c6a6582f838d] nodejs.TypeError: Cannot read property 'cloneDeep' of undefined
+    at UserService.getUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:94:30)
+    at UserController.show (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:53:39)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 2528
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 18:18:00,375 INFO 2529 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:18:36,470 INFO 2529 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 18:20:07,738 INFO 2529 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:23:04,039 INFO 2534 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:27:04,434 INFO 2541 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:28:16,735 INFO 2542 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:28:18,360 INFO 2542 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:28:44,741 INFO 2542 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:28:49,439 WARN 2542 [-/127.0.0.1/-/2ms GET /user/57c4dda0b42511e999baa1190ae09435] nodejs.UnauthorizedError: invalid token
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:75:12)
+    at decoded (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+name: "UnauthorizedError"
+message: "invalid token"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid token"}
+pid: 2542
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 18:29:04,897 WARN 2542 [-/127.0.0.1/-/1ms GET /user/57c4dda0b42511e999baa1190ae09435] nodejs.UnauthorizedError: jwt malformed
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/jsonwebtoken/verify.js:63:12)
+    at decoded (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+name: "UnauthorizedError"
+message: "jwt malformed"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"jwt malformed"}
+pid: 2542
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-14 18:29:32,558 INFO 2542 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-14 18:29:39,210 INFO 2542 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:29:43,986 INFO 2542 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
+2020-08-14 18:31:38,122 INFO 2730 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:31:39,291 INFO 2732 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:33:21,132 INFO 2762 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-08-14 18:33:24,837 INFO 2732 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:33:33,796 INFO 2732 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:33:37,187 INFO 2732 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-14 18:33:39,483 INFO 2732 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '7d24545a716b4f9fb506c6a6582f838d';
