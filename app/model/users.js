@@ -10,27 +10,27 @@ module.exports = app => {
     },
     name: {
       type: CHAR(32),
-      allowNull: true,
+      allowNull: false,
     },
     password: {
       type: CHAR(32),
-      allowNull: true,
+      allowNull: false,
     },
     real_name: {
       type: CHAR(32),
-      allowNull: false,
+      allowNull: true,
     },
     user_role: {
       type: INTEGER(8),
-      allowNull: false,
+      allowNull: true,
     },
     headimg: {
       type: CHAR(32),
-      allowNull: false,
+      allowNull: true,
     },
     login_time: {
       type: INTEGER(16),
-      allowNull: false,
+      allowNull: true,
     },
   }, {
     freezeTableName: true,

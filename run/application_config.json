@@ -238,7 +238,8 @@
         "lodash": "^4.17.20",
         "moment": "^2.27.0",
         "mysql2": "^2.1.0",
-        "passport-local": "^1.0.0"
+        "passport-local": "^1.0.0",
+        "uuid": "^8.3.0"
       },
       "devDependencies": {
         "autod": "^3.0.1",

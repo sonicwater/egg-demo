@@ -67,6 +67,14 @@ class UserController extends Controller {
     ctx.body = await ctx.service.user.getUser(ctx.params.id);
   }
 
+  // 创建人员
+  async create() {
+    const { ctx } = this;
+    const { username, password } = ctx.request.body;
+    await ctx.service.user.addUser(username,password);
+    ctx.body = { code: 200, msg: '新增成功' };
+  }
+
 }
 
 module.exports = UserController;

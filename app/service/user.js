@@ -148,6 +148,19 @@ class UserService extends Service {
     }
   }
 
+  // 新增人员
+  async addUser(username,password) {
+    const { ctx } = this;
+    const psw = this.getMd5Data(password);
+    const user_id = ctx.helper.uuid.replace(/-/g,"");
+    console.log(user_id,username,psw);
+    await ctx.model.Users.create({
+      user_id,
+      name:username,
+      password:psw
+    });
+  }
+
 }
 
 module.exports = UserService;

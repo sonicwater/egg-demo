@@ -13,4 +13,7 @@ module.exports = app => {
   // 查询 不做鉴权
   router.get('/user', controller.user.index);
   router.get('/user/:id', jwt, controller.user.show);
+
+  // 新增
+  router.put('/user', jwt, controller.user.create);
 };

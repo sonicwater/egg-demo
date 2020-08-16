@@ -703,3 +703,577 @@ hostname: zhangmengdeMacBook-Pro.local
 pid: 2528
 hostname: zhangmengdeMacBook-Pro.local
 
+2020-08-14 19:09:22,228 ERROR 2938 [-/127.0.0.1/-/23ms PUT /user] nodejs.SequelizeValidationError: notNull Violation: Users.user_id cannot be null,
+notNull Violation: Users.real_name cannot be null,
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+notNull Violation: Users.real_name cannot be null,
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:72:8)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:107:14
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:4140:49)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3905:21
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3902:23)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeValidationError"
+errors: [{"message":"Users.user_id cannot be null","type":"notNull Violation","path":"user_id","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.real_name cannot be null","type":"notNull Violation","path":"real_name","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.user_role cannot be null","type":"notNull Violation","path":"user_role","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.headimg cannot be null","type":"notNull Violation","path":"headimg","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.login_time cannot be null","type":"notNull Violation","path":"login_time","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 2938
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-16 10:11:42,916 ERROR 1404 [-/127.0.0.1/-/36ms PUT /user] nodejs.SequelizeValidationError: notNull Violation: Users.user_id cannot be null,
+notNull Violation: Users.real_name cannot be null,
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+notNull Violation: Users.real_name cannot be null,
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:72:8)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:107:14
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:4140:49)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3905:21
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3902:23)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeValidationError"
+errors: [{"message":"Users.user_id cannot be null","type":"notNull Violation","path":"user_id","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.real_name cannot be null","type":"notNull Violation","path":"real_name","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.user_role cannot be null","type":"notNull Violation","path":"user_role","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.headimg cannot be null","type":"notNull Violation","path":"headimg","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.login_time cannot be null","type":"notNull Violation","path":"login_time","value":null,"origin":"CORE","instance":{"user_id":null,"name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 1404
+hostname: bogon
+
+2020-08-16 10:28:03,689 ERROR 1657 [-/127.0.0.1/-/17ms PUT /user] nodejs.TypeError: ctx.helper.uuid is not a function
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:156:26)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 1657
+hostname: bogon
+
+2020-08-16 10:41:12,181 ERROR 1675 [-/127.0.0.1/-/18ms PUT /user] nodejs.TypeError: ctx.helper.uuid is not a function
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:156:26)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 1675
+hostname: bogon
+
+2020-08-16 10:42:53,084 ERROR 1716 [-/127.0.0.1/-/16ms PUT /user] nodejs.TypeError: ctx.helper.uuid is not a function
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:156:26)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+
+pid: 1716
+hostname: bogon
+
+2020-08-16 10:51:15,409 ERROR 1794 [-/127.0.0.1/-/23ms PUT /user] nodejs.SequelizeValidationError: notNull Violation: Users.real_name cannot be null,
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:72:8)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:107:14
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:4140:49)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3905:21
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3902:23)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:37)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:38)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeValidationError"
+errors: [{"message":"Users.real_name cannot be null","type":"notNull Violation","path":"real_name","value":null,"origin":"CORE","instance":{"user_id":"94ee68b6-cd3b-4f3e-b21a-2956519f2fda","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.user_role cannot be null","type":"notNull Violation","path":"user_role","value":null,"origin":"CORE","instance":{"user_id":"94ee68b6-cd3b-4f3e-b21a-2956519f2fda","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.headimg cannot be null","type":"notNull Violation","path":"headimg","value":null,"origin":"CORE","instance":{"user_id":"94ee68b6-cd3b-4f3e-b21a-2956519f2fda","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.login_time cannot be null","type":"notNull Violation","path":"login_time","value":null,"origin":"CORE","instance":{"user_id":"94ee68b6-cd3b-4f3e-b21a-2956519f2fda","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 1794
+hostname: bogon
+
+2020-08-16 10:52:19,969 ERROR 1799 [-/127.0.0.1/-/22ms PUT /user] nodejs.SequelizeValidationError: notNull Violation: Users.real_name cannot be null,
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+notNull Violation: Users.user_role cannot be null,
+notNull Violation: Users.headimg cannot be null,
+notNull Violation: Users.login_time cannot be null
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:74:15
+From previous event:
+    at InstanceValidator._validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:72:8)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:107:14
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:4140:49)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3905:21
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3902:23)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeValidationError"
+errors: [{"message":"Users.real_name cannot be null","type":"notNull Violation","path":"real_name","value":null,"origin":"CORE","instance":{"user_id":"62d4f193-bc96-4b1b-934c-8e9a8bb6e15c","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.user_role cannot be null","type":"notNull Violation","path":"user_role","value":null,"origin":"CORE","instance":{"user_id":"62d4f193-bc96-4b1b-934c-8e9a8bb6e15c","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.headimg cannot be null","type":"notNull Violation","path":"headimg","value":null,"origin":"CORE","instance":{"user_id":"62d4f193-bc96-4b1b-934c-8e9a8bb6e15c","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]},{"message":"Users.login_time cannot be null","type":"notNull Violation","path":"login_time","value":null,"origin":"CORE","instance":{"user_id":"62d4f193-bc96-4b1b-934c-8e9a8bb6e15c","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]
+pid: 1799
+hostname: bogon
+
+2020-08-16 10:54:11,245 ERROR 1817 [-/127.0.0.1/-/31ms PUT /user] nodejs.SequelizeDatabaseError: Data too long for column 'user_id' at row 1
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.insert (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:890:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3989:52
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3966:8)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'user_id' at row 1","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["603d34c8-14f9-4561-bbb0-713b29da9d00","lily","202cb962ac59075b964b07152d234b70"]}
+original: {"code":"ER_DATA_TOO_LONG","errno":1406,"sqlState":"22001","sqlMessage":"Data too long for column 'user_id' at row 1","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["603d34c8-14f9-4561-bbb0-713b29da9d00","lily","202cb962ac59075b964b07152d234b70"]}
+sql: "INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);"
+parameters: ["603d34c8-14f9-4561-bbb0-713b29da9d00","lily","202cb962ac59075b964b07152d234b70"]
+pid: 1817
+hostname: bogon
+
+2020-08-16 10:56:59,190 ERROR 1823 [-/127.0.0.1/-/31ms PUT /user] nodejs.SequelizeDatabaseError: Field 'user_role' doesn't have a default value
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:244:16)
+    at Execute.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.insert (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:890:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3989:52
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3966:8)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_NO_DEFAULT_FOR_FIELD","errno":1364,"sqlState":"HY000","sqlMessage":"Field 'user_role' doesn't have a default value","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+original: {"code":"ER_NO_DEFAULT_FOR_FIELD","errno":1364,"sqlState":"HY000","sqlMessage":"Field 'user_role' doesn't have a default value","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+sql: "INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);"
+parameters: ["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]
+pid: 1823
+hostname: bogon
+
+2020-08-16 10:59:55,772 ERROR 1823 [-/127.0.0.1/-/17ms PUT /user] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:223:16)
+    at Execute.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.insert (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:890:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3989:52
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3966:8)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"57c4dda0b42511e999baa1190ae09435","origin":"DB","instance":{"user_id":"57c4dda0b42511e999baa1190ae09435","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"57c4dda0b42511e999baa1190ae09435"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '57c4dda0b42511e999baa1190ae09435' for key 'PRIMARY'","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '57c4dda0b42511e999baa1190ae09435' for key 'PRIMARY'","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+sql: "INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);"
+pid: 1823
+hostname: bogon
+
+2020-08-16 11:00:51,553 ERROR 2014 [-/127.0.0.1/-/30ms PUT /user] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:223:16)
+    at Execute.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.insert (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:890:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3989:52
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3966:8)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"57c4dda0b42511e999baa1190ae09435","origin":"DB","instance":{"user_id":"57c4dda0b42511e999baa1190ae09435","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"57c4dda0b42511e999baa1190ae09435"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '57c4dda0b42511e999baa1190ae09435' for key 'PRIMARY'","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '57c4dda0b42511e999baa1190ae09435' for key 'PRIMARY'","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+sql: "INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);"
+pid: 2014
+hostname: bogon
+
+2020-08-16 11:03:50,780 ERROR 2014 [-/127.0.0.1/-/10ms PUT /user] nodejs.SequelizeUniqueConstraintError: Validation error
+    at Query.formatError (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:223:16)
+    at Execute.handler [as onResult] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:51:23)
+    at Execute.execute (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.onPacket (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.<anonymous> (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/mysql2/lib/connection.js:82:25)
+    at Socket.emit (events.js:210:5)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:290:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:182:23)
+From previous event:
+    at Query.run (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/dialects/mysql/query.js:39:12)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:29
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:655:12
+From previous event:
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:651:10
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:70:21
+    at new Promise (<anonymous>)
+    at retryAsPromised (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/retry-as-promised/index.js:60:10)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:641:30
+From previous event:
+    at Sequelize.query (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/sequelize.js:590:23)
+    at QueryInterface.insert (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/query-interface.js:890:27)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3989:52
+    at processImmediate (internal/timers.js:439:21)
+From previous event:
+    at model.save (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:3966:8)
+    at Function.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/sequelize/lib/model.js:2230:8)
+    at UserService.addUser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/service/user.js:155:27)
+    at UserController.create (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/user.js:74:28)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:145:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+name: "SequelizeUniqueConstraintError"
+errors: [{"message":"PRIMARY must be unique","type":"unique violation","path":"PRIMARY","value":"57c4dda0b42511e999baa1190ae09435","origin":"DB","instance":{"user_id":"57c4dda0b42511e999baa1190ae09435","name":"lily","password":"202cb962ac59075b964b07152d234b70"},"validatorKey":"not_unique","validatorName":null,"validatorArgs":[]}]
+fields: {"PRIMARY":"57c4dda0b42511e999baa1190ae09435"}
+parent: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '57c4dda0b42511e999baa1190ae09435' for key 'PRIMARY'","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+original: {"code":"ER_DUP_ENTRY","errno":1062,"sqlState":"23000","sqlMessage":"Duplicate entry '57c4dda0b42511e999baa1190ae09435' for key 'PRIMARY'","sql":"INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);","parameters":["57c4dda0b42511e999baa1190ae09435","lily","202cb962ac59075b964b07152d234b70"]}
+sql: "INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);"
+pid: 2014
+hostname: bogon
+

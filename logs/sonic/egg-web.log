@@ -3588,3 +3588,471 @@
 2020-08-14 18:33:21,095 INFO 2762 [egg:core] dump config after load, 4ms
 2020-08-14 18:33:21,118 INFO 2762 [egg-watcher:application] watcher start success
 2020-08-14 18:33:21,141 INFO 2762 [egg:core] dump config after ready, 5ms
+2020-08-14 18:37:02,160 INFO 2802 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:37:02,183 INFO 2802 [egg-multipart] stream mode enable
+2020-08-14 18:37:02,409 INFO 2802 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:37:02,411 INFO 2802 [egg-security] use methodnoallow middleware
+2020-08-14 18:37:02,411 INFO 2802 [egg-security] use noopen middleware
+2020-08-14 18:37:02,412 INFO 2802 [egg-security] use nosniff middleware
+2020-08-14 18:37:02,412 INFO 2802 [egg-security] use xssProtection middleware
+2020-08-14 18:37:02,412 INFO 2802 [egg-security] use xframe middleware
+2020-08-14 18:37:02,413 INFO 2802 [egg-security] use dta middleware
+2020-08-14 18:37:02,413 INFO 2802 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:37:02,423 INFO 2802 [egg:core] dump config after load, 5ms
+2020-08-14 18:37:02,440 INFO 2802 [egg-watcher:application] watcher start success
+2020-08-14 18:37:02,473 INFO 2802 [egg:core] dump config after ready, 6ms
+2020-08-14 18:44:10,442 INFO 2834 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:44:10,465 INFO 2834 [egg-multipart] stream mode enable
+2020-08-14 18:44:10,679 INFO 2834 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:44:10,681 INFO 2834 [egg-security] use methodnoallow middleware
+2020-08-14 18:44:10,682 INFO 2834 [egg-security] use noopen middleware
+2020-08-14 18:44:10,682 INFO 2834 [egg-security] use nosniff middleware
+2020-08-14 18:44:10,682 INFO 2834 [egg-security] use xssProtection middleware
+2020-08-14 18:44:10,683 INFO 2834 [egg-security] use xframe middleware
+2020-08-14 18:44:10,683 INFO 2834 [egg-security] use dta middleware
+2020-08-14 18:44:10,683 INFO 2834 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:44:10,692 INFO 2834 [egg:core] dump config after load, 4ms
+2020-08-14 18:44:10,716 INFO 2834 [egg-watcher:application] watcher start success
+2020-08-14 18:44:10,739 INFO 2834 [egg:core] dump config after ready, 5ms
+2020-08-14 18:57:08,024 INFO 2856 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:57:08,045 INFO 2856 [egg-multipart] stream mode enable
+2020-08-14 18:57:08,251 INFO 2856 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:57:08,253 INFO 2856 [egg-security] use methodnoallow middleware
+2020-08-14 18:57:08,253 INFO 2856 [egg-security] use noopen middleware
+2020-08-14 18:57:08,253 INFO 2856 [egg-security] use nosniff middleware
+2020-08-14 18:57:08,254 INFO 2856 [egg-security] use xssProtection middleware
+2020-08-14 18:57:08,254 INFO 2856 [egg-security] use xframe middleware
+2020-08-14 18:57:08,254 INFO 2856 [egg-security] use dta middleware
+2020-08-14 18:57:08,254 INFO 2856 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:57:08,263 INFO 2856 [egg:core] dump config after load, 4ms
+2020-08-14 18:57:08,279 INFO 2856 [egg-watcher:application] watcher start success
+2020-08-14 18:57:08,311 INFO 2856 [egg:core] dump config after ready, 5ms
+2020-08-14 18:57:26,874 INFO 2860 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:57:26,895 INFO 2860 [egg-multipart] stream mode enable
+2020-08-14 18:57:27,109 INFO 2860 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:57:27,110 INFO 2860 [egg-security] use methodnoallow middleware
+2020-08-14 18:57:27,111 INFO 2860 [egg-security] use noopen middleware
+2020-08-14 18:57:27,111 INFO 2860 [egg-security] use nosniff middleware
+2020-08-14 18:57:27,111 INFO 2860 [egg-security] use xssProtection middleware
+2020-08-14 18:57:27,112 INFO 2860 [egg-security] use xframe middleware
+2020-08-14 18:57:27,112 INFO 2860 [egg-security] use dta middleware
+2020-08-14 18:57:27,112 INFO 2860 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:57:27,122 INFO 2860 [egg:core] dump config after load, 5ms
+2020-08-14 18:57:27,138 INFO 2860 [egg-watcher:application] watcher start success
+2020-08-14 18:57:27,170 INFO 2860 [egg:core] dump config after ready, 5ms
+2020-08-14 18:58:17,116 INFO 2865 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:58:17,137 INFO 2865 [egg-multipart] stream mode enable
+2020-08-14 18:58:17,345 INFO 2865 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:58:17,347 INFO 2865 [egg-security] use methodnoallow middleware
+2020-08-14 18:58:17,347 INFO 2865 [egg-security] use noopen middleware
+2020-08-14 18:58:17,348 INFO 2865 [egg-security] use nosniff middleware
+2020-08-14 18:58:17,348 INFO 2865 [egg-security] use xssProtection middleware
+2020-08-14 18:58:17,348 INFO 2865 [egg-security] use xframe middleware
+2020-08-14 18:58:17,348 INFO 2865 [egg-security] use dta middleware
+2020-08-14 18:58:17,349 INFO 2865 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:58:17,358 INFO 2865 [egg:core] dump config after load, 5ms
+2020-08-14 18:58:17,374 INFO 2865 [egg-watcher:application] watcher start success
+2020-08-14 18:58:17,405 INFO 2865 [egg:core] dump config after ready, 5ms
+2020-08-14 18:58:55,847 INFO 2872 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:58:55,868 INFO 2872 [egg-multipart] stream mode enable
+2020-08-14 18:58:56,074 INFO 2872 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:58:56,076 INFO 2872 [egg-security] use methodnoallow middleware
+2020-08-14 18:58:56,076 INFO 2872 [egg-security] use noopen middleware
+2020-08-14 18:58:56,077 INFO 2872 [egg-security] use nosniff middleware
+2020-08-14 18:58:56,077 INFO 2872 [egg-security] use xssProtection middleware
+2020-08-14 18:58:56,077 INFO 2872 [egg-security] use xframe middleware
+2020-08-14 18:58:56,077 INFO 2872 [egg-security] use dta middleware
+2020-08-14 18:58:56,077 INFO 2872 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:58:56,086 INFO 2872 [egg:core] dump config after load, 4ms
+2020-08-14 18:58:56,102 INFO 2872 [egg-watcher:application] watcher start success
+2020-08-14 18:58:56,134 INFO 2872 [egg:core] dump config after ready, 5ms
+2020-08-14 18:59:12,525 INFO 2876 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:59:12,546 INFO 2876 [egg-multipart] stream mode enable
+2020-08-14 18:59:12,750 INFO 2876 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:59:12,752 INFO 2876 [egg-security] use methodnoallow middleware
+2020-08-14 18:59:12,753 INFO 2876 [egg-security] use noopen middleware
+2020-08-14 18:59:12,753 INFO 2876 [egg-security] use nosniff middleware
+2020-08-14 18:59:12,753 INFO 2876 [egg-security] use xssProtection middleware
+2020-08-14 18:59:12,754 INFO 2876 [egg-security] use xframe middleware
+2020-08-14 18:59:12,754 INFO 2876 [egg-security] use dta middleware
+2020-08-14 18:59:12,754 INFO 2876 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:59:12,763 INFO 2876 [egg:core] dump config after load, 4ms
+2020-08-14 18:59:12,779 INFO 2876 [egg-watcher:application] watcher start success
+2020-08-14 18:59:12,809 INFO 2876 [egg:core] dump config after ready, 5ms
+2020-08-14 18:59:52,201 INFO 2881 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 18:59:52,223 INFO 2881 [egg-multipart] stream mode enable
+2020-08-14 18:59:52,448 INFO 2881 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 18:59:52,450 INFO 2881 [egg-security] use methodnoallow middleware
+2020-08-14 18:59:52,450 INFO 2881 [egg-security] use noopen middleware
+2020-08-14 18:59:52,451 INFO 2881 [egg-security] use nosniff middleware
+2020-08-14 18:59:52,451 INFO 2881 [egg-security] use xssProtection middleware
+2020-08-14 18:59:52,451 INFO 2881 [egg-security] use xframe middleware
+2020-08-14 18:59:52,452 INFO 2881 [egg-security] use dta middleware
+2020-08-14 18:59:52,452 INFO 2881 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 18:59:52,463 INFO 2881 [egg:core] dump config after load, 5ms
+2020-08-14 18:59:52,479 INFO 2881 [egg-watcher:application] watcher start success
+2020-08-14 18:59:52,510 INFO 2881 [egg:core] dump config after ready, 5ms
+2020-08-14 19:01:36,913 INFO 2888 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 19:01:36,936 INFO 2888 [egg-multipart] stream mode enable
+2020-08-14 19:01:37,155 INFO 2888 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 19:01:37,157 INFO 2888 [egg-security] use methodnoallow middleware
+2020-08-14 19:01:37,157 INFO 2888 [egg-security] use noopen middleware
+2020-08-14 19:01:37,157 INFO 2888 [egg-security] use nosniff middleware
+2020-08-14 19:01:37,158 INFO 2888 [egg-security] use xssProtection middleware
+2020-08-14 19:01:37,158 INFO 2888 [egg-security] use xframe middleware
+2020-08-14 19:01:37,158 INFO 2888 [egg-security] use dta middleware
+2020-08-14 19:01:37,158 INFO 2888 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 19:01:37,168 INFO 2888 [egg:core] dump config after load, 4ms
+2020-08-14 19:01:37,184 INFO 2888 [egg-watcher:application] watcher start success
+2020-08-14 19:01:37,215 INFO 2888 [egg:core] dump config after ready, 5ms
+2020-08-14 19:03:34,868 INFO 2896 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 19:03:34,891 INFO 2896 [egg-multipart] stream mode enable
+2020-08-14 19:03:35,114 INFO 2896 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 19:03:35,116 INFO 2896 [egg-security] use methodnoallow middleware
+2020-08-14 19:03:35,116 INFO 2896 [egg-security] use noopen middleware
+2020-08-14 19:03:35,117 INFO 2896 [egg-security] use nosniff middleware
+2020-08-14 19:03:35,117 INFO 2896 [egg-security] use xssProtection middleware
+2020-08-14 19:03:35,117 INFO 2896 [egg-security] use xframe middleware
+2020-08-14 19:03:35,118 INFO 2896 [egg-security] use dta middleware
+2020-08-14 19:03:35,118 INFO 2896 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 19:03:35,128 INFO 2896 [egg:core] dump config after load, 5ms
+2020-08-14 19:03:35,145 INFO 2896 [egg-watcher:application] watcher start success
+2020-08-14 19:03:35,177 INFO 2896 [egg:core] dump config after ready, 5ms
+2020-08-14 19:06:24,693 INFO 2903 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 19:06:24,714 INFO 2903 [egg-multipart] stream mode enable
+2020-08-14 19:06:24,934 INFO 2903 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 19:06:24,936 INFO 2903 [egg-security] use methodnoallow middleware
+2020-08-14 19:06:24,936 INFO 2903 [egg-security] use noopen middleware
+2020-08-14 19:06:24,937 INFO 2903 [egg-security] use nosniff middleware
+2020-08-14 19:06:24,937 INFO 2903 [egg-security] use xssProtection middleware
+2020-08-14 19:06:24,937 INFO 2903 [egg-security] use xframe middleware
+2020-08-14 19:06:24,938 INFO 2903 [egg-security] use dta middleware
+2020-08-14 19:06:24,938 INFO 2903 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 19:06:24,948 INFO 2903 [egg:core] dump config after load, 5ms
+2020-08-14 19:06:24,965 INFO 2903 [egg-watcher:application] watcher start success
+2020-08-14 19:06:24,997 INFO 2903 [egg:core] dump config after ready, 5ms
+2020-08-14 19:07:18,812 INFO 2907 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 19:07:18,834 INFO 2907 [egg-multipart] stream mode enable
+2020-08-14 19:07:19,039 INFO 2907 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 19:07:19,041 INFO 2907 [egg-security] use methodnoallow middleware
+2020-08-14 19:07:19,041 INFO 2907 [egg-security] use noopen middleware
+2020-08-14 19:07:19,041 INFO 2907 [egg-security] use nosniff middleware
+2020-08-14 19:07:19,042 INFO 2907 [egg-security] use xssProtection middleware
+2020-08-14 19:07:19,042 INFO 2907 [egg-security] use xframe middleware
+2020-08-14 19:07:19,042 INFO 2907 [egg-security] use dta middleware
+2020-08-14 19:07:19,042 INFO 2907 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 19:07:19,051 INFO 2907 [egg:core] dump config after load, 4ms
+2020-08-14 19:07:19,067 INFO 2907 [egg-watcher:application] watcher start success
+2020-08-14 19:07:19,101 INFO 2907 [egg:core] dump config after ready, 8ms
+2020-08-14 19:08:54,412 INFO 2918 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 19:08:54,434 INFO 2918 [egg-multipart] stream mode enable
+2020-08-14 19:08:54,639 INFO 2918 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 19:08:54,640 INFO 2918 [egg-security] use methodnoallow middleware
+2020-08-14 19:08:54,641 INFO 2918 [egg-security] use noopen middleware
+2020-08-14 19:08:54,641 INFO 2918 [egg-security] use nosniff middleware
+2020-08-14 19:08:54,641 INFO 2918 [egg-security] use xssProtection middleware
+2020-08-14 19:08:54,642 INFO 2918 [egg-security] use xframe middleware
+2020-08-14 19:08:54,642 INFO 2918 [egg-security] use dta middleware
+2020-08-14 19:08:54,642 INFO 2918 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 19:08:54,651 INFO 2918 [egg:core] dump config after load, 4ms
+2020-08-14 19:08:54,667 INFO 2918 [egg-watcher:application] watcher start success
+2020-08-14 19:08:54,697 INFO 2918 [egg:core] dump config after ready, 5ms
+2020-08-14 19:09:11,709 INFO 2938 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-14 19:09:11,733 INFO 2938 [egg-multipart] stream mode enable
+2020-08-14 19:09:11,948 INFO 2938 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-14 19:09:11,950 INFO 2938 [egg-security] use methodnoallow middleware
+2020-08-14 19:09:11,950 INFO 2938 [egg-security] use noopen middleware
+2020-08-14 19:09:11,951 INFO 2938 [egg-security] use nosniff middleware
+2020-08-14 19:09:11,951 INFO 2938 [egg-security] use xssProtection middleware
+2020-08-14 19:09:11,952 INFO 2938 [egg-security] use xframe middleware
+2020-08-14 19:09:11,952 INFO 2938 [egg-security] use dta middleware
+2020-08-14 19:09:11,952 INFO 2938 [egg-security] compose 6 middlewares into one security middleware
+2020-08-14 19:09:11,961 INFO 2938 [egg:core] dump config after load, 4ms
+2020-08-14 19:09:11,988 INFO 2938 [egg-watcher:application] watcher start success
+2020-08-14 19:09:12,010 INFO 2938 [egg:core] dump config after ready, 5ms
+2020-08-16 10:03:50,413 INFO 1379 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:03:50,434 INFO 1379 [egg-multipart] stream mode enable
+2020-08-16 10:03:50,673 INFO 1379 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:03:50,675 INFO 1379 [egg-security] use methodnoallow middleware
+2020-08-16 10:03:50,675 INFO 1379 [egg-security] use noopen middleware
+2020-08-16 10:03:50,676 INFO 1379 [egg-security] use nosniff middleware
+2020-08-16 10:03:50,677 INFO 1379 [egg-security] use xssProtection middleware
+2020-08-16 10:03:50,677 INFO 1379 [egg-security] use xframe middleware
+2020-08-16 10:03:50,678 INFO 1379 [egg-security] use dta middleware
+2020-08-16 10:03:50,678 INFO 1379 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:03:50,688 INFO 1379 [egg:core] dump config after load, 4ms
+2020-08-16 10:03:50,713 INFO 1379 [egg-watcher:application] watcher start success
+2020-08-16 10:03:50,735 INFO 1379 [egg:core] dump config after ready, 5ms
+2020-08-16 10:09:12,482 INFO 1404 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:09:12,511 INFO 1404 [egg-multipart] stream mode enable
+2020-08-16 10:09:12,773 INFO 1404 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:09:12,775 INFO 1404 [egg-security] use methodnoallow middleware
+2020-08-16 10:09:12,776 INFO 1404 [egg-security] use noopen middleware
+2020-08-16 10:09:12,777 INFO 1404 [egg-security] use nosniff middleware
+2020-08-16 10:09:12,777 INFO 1404 [egg-security] use xssProtection middleware
+2020-08-16 10:09:12,778 INFO 1404 [egg-security] use xframe middleware
+2020-08-16 10:09:12,779 INFO 1404 [egg-security] use dta middleware
+2020-08-16 10:09:12,779 INFO 1404 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:09:12,792 INFO 1404 [egg:core] dump config after load, 5ms
+2020-08-16 10:09:12,814 INFO 1404 [egg-watcher:application] watcher start success
+2020-08-16 10:09:12,854 INFO 1404 [egg:core] dump config after ready, 6ms
+2020-08-16 10:13:03,003 INFO 1528 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:13:03,029 INFO 1528 [egg-multipart] stream mode enable
+2020-08-16 10:13:03,350 INFO 1528 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:13:03,352 INFO 1528 [egg-security] use methodnoallow middleware
+2020-08-16 10:13:03,352 INFO 1528 [egg-security] use noopen middleware
+2020-08-16 10:13:03,353 INFO 1528 [egg-security] use nosniff middleware
+2020-08-16 10:13:03,353 INFO 1528 [egg-security] use xssProtection middleware
+2020-08-16 10:13:03,353 INFO 1528 [egg-security] use xframe middleware
+2020-08-16 10:13:03,354 INFO 1528 [egg-security] use dta middleware
+2020-08-16 10:13:03,354 INFO 1528 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:13:03,367 INFO 1528 [egg:core] dump config after load, 7ms
+2020-08-16 10:13:03,384 INFO 1528 [egg-watcher:application] watcher start success
+2020-08-16 10:13:03,420 INFO 1528 [egg:core] dump config after ready, 5ms
+2020-08-16 10:25:00,393 INFO 1614 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:25:00,429 INFO 1614 [egg-multipart] stream mode enable
+2020-08-16 10:25:00,744 INFO 1614 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:25:00,746 INFO 1614 [egg-security] use methodnoallow middleware
+2020-08-16 10:25:00,747 INFO 1614 [egg-security] use noopen middleware
+2020-08-16 10:25:00,747 INFO 1614 [egg-security] use nosniff middleware
+2020-08-16 10:25:00,747 INFO 1614 [egg-security] use xssProtection middleware
+2020-08-16 10:25:00,748 INFO 1614 [egg-security] use xframe middleware
+2020-08-16 10:25:00,748 INFO 1614 [egg-security] use dta middleware
+2020-08-16 10:25:00,748 INFO 1614 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:25:00,762 INFO 1614 [egg:core] dump config after load, 5ms
+2020-08-16 10:25:00,796 INFO 1614 [egg-watcher:application] watcher start success
+2020-08-16 10:25:00,823 INFO 1614 [egg:core] dump config after ready, 7ms
+2020-08-16 10:26:28,327 INFO 1629 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:26:28,351 INFO 1629 [egg-multipart] stream mode enable
+2020-08-16 10:26:28,586 INFO 1629 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:26:28,588 INFO 1629 [egg-security] use methodnoallow middleware
+2020-08-16 10:26:28,589 INFO 1629 [egg-security] use noopen middleware
+2020-08-16 10:26:28,589 INFO 1629 [egg-security] use nosniff middleware
+2020-08-16 10:26:28,590 INFO 1629 [egg-security] use xssProtection middleware
+2020-08-16 10:26:28,590 INFO 1629 [egg-security] use xframe middleware
+2020-08-16 10:26:28,590 INFO 1629 [egg-security] use dta middleware
+2020-08-16 10:26:28,590 INFO 1629 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:26:28,601 INFO 1629 [egg:core] dump config after load, 5ms
+2020-08-16 10:26:28,618 INFO 1629 [egg-watcher:application] watcher start success
+2020-08-16 10:26:28,651 INFO 1629 [egg:core] dump config after ready, 6ms
+2020-08-16 10:27:04,826 INFO 1651 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:27:04,851 INFO 1651 [egg-multipart] stream mode enable
+2020-08-16 10:27:05,093 INFO 1651 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:27:05,095 INFO 1651 [egg-security] use methodnoallow middleware
+2020-08-16 10:27:05,096 INFO 1651 [egg-security] use noopen middleware
+2020-08-16 10:27:05,096 INFO 1651 [egg-security] use nosniff middleware
+2020-08-16 10:27:05,096 INFO 1651 [egg-security] use xssProtection middleware
+2020-08-16 10:27:05,097 INFO 1651 [egg-security] use xframe middleware
+2020-08-16 10:27:05,097 INFO 1651 [egg-security] use dta middleware
+2020-08-16 10:27:05,097 INFO 1651 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:27:05,108 INFO 1651 [egg:core] dump config after load, 5ms
+2020-08-16 10:27:05,125 INFO 1651 [egg-watcher:application] watcher start success
+2020-08-16 10:27:05,158 INFO 1651 [egg:core] dump config after ready, 5ms
+2020-08-16 10:27:57,195 INFO 1657 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:27:57,220 INFO 1657 [egg-multipart] stream mode enable
+2020-08-16 10:27:57,459 INFO 1657 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:27:57,462 INFO 1657 [egg-security] use methodnoallow middleware
+2020-08-16 10:27:57,462 INFO 1657 [egg-security] use noopen middleware
+2020-08-16 10:27:57,462 INFO 1657 [egg-security] use nosniff middleware
+2020-08-16 10:27:57,463 INFO 1657 [egg-security] use xssProtection middleware
+2020-08-16 10:27:57,463 INFO 1657 [egg-security] use xframe middleware
+2020-08-16 10:27:57,463 INFO 1657 [egg-security] use dta middleware
+2020-08-16 10:27:57,463 INFO 1657 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:27:57,474 INFO 1657 [egg:core] dump config after load, 4ms
+2020-08-16 10:27:57,493 INFO 1657 [egg-watcher:application] watcher start success
+2020-08-16 10:27:57,525 INFO 1657 [egg:core] dump config after ready, 5ms
+2020-08-16 10:41:10,968 INFO 1675 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:41:10,993 INFO 1675 [egg-multipart] stream mode enable
+2020-08-16 10:41:11,231 INFO 1675 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:41:11,233 INFO 1675 [egg-security] use methodnoallow middleware
+2020-08-16 10:41:11,233 INFO 1675 [egg-security] use noopen middleware
+2020-08-16 10:41:11,234 INFO 1675 [egg-security] use nosniff middleware
+2020-08-16 10:41:11,234 INFO 1675 [egg-security] use xssProtection middleware
+2020-08-16 10:41:11,234 INFO 1675 [egg-security] use xframe middleware
+2020-08-16 10:41:11,235 INFO 1675 [egg-security] use dta middleware
+2020-08-16 10:41:11,235 INFO 1675 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:41:11,245 INFO 1675 [egg:core] dump config after load, 5ms
+2020-08-16 10:41:11,262 INFO 1675 [egg-watcher:application] watcher start success
+2020-08-16 10:41:11,296 INFO 1675 [egg:core] dump config after ready, 5ms
+2020-08-16 10:42:23,882 INFO 1716 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:42:23,905 INFO 1716 [egg-multipart] stream mode enable
+2020-08-16 10:42:24,139 INFO 1716 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:42:24,141 INFO 1716 [egg-security] use methodnoallow middleware
+2020-08-16 10:42:24,141 INFO 1716 [egg-security] use noopen middleware
+2020-08-16 10:42:24,141 INFO 1716 [egg-security] use nosniff middleware
+2020-08-16 10:42:24,142 INFO 1716 [egg-security] use xssProtection middleware
+2020-08-16 10:42:24,142 INFO 1716 [egg-security] use xframe middleware
+2020-08-16 10:42:24,142 INFO 1716 [egg-security] use dta middleware
+2020-08-16 10:42:24,142 INFO 1716 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:42:24,153 INFO 1716 [egg:core] dump config after load, 5ms
+2020-08-16 10:42:24,178 INFO 1716 [egg-watcher:application] watcher start success
+2020-08-16 10:42:24,202 INFO 1716 [egg:core] dump config after ready, 5ms
+2020-08-16 10:43:45,124 INFO 1723 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:43:45,147 INFO 1723 [egg-multipart] stream mode enable
+2020-08-16 10:43:45,376 INFO 1723 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:43:45,378 INFO 1723 [egg-security] use methodnoallow middleware
+2020-08-16 10:43:45,379 INFO 1723 [egg-security] use noopen middleware
+2020-08-16 10:43:45,379 INFO 1723 [egg-security] use nosniff middleware
+2020-08-16 10:43:45,380 INFO 1723 [egg-security] use xssProtection middleware
+2020-08-16 10:43:45,380 INFO 1723 [egg-security] use xframe middleware
+2020-08-16 10:43:45,380 INFO 1723 [egg-security] use dta middleware
+2020-08-16 10:43:45,380 INFO 1723 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:43:45,390 INFO 1723 [egg:core] dump config after load, 4ms
+2020-08-16 10:43:45,407 INFO 1723 [egg-watcher:application] watcher start success
+2020-08-16 10:43:45,438 INFO 1723 [egg:core] dump config after ready, 5ms
+2020-08-16 10:44:58,461 INFO 1728 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:44:58,487 INFO 1728 [egg-multipart] stream mode enable
+2020-08-16 10:44:58,716 INFO 1728 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:44:58,719 INFO 1728 [egg-security] use methodnoallow middleware
+2020-08-16 10:44:58,720 INFO 1728 [egg-security] use noopen middleware
+2020-08-16 10:44:58,720 INFO 1728 [egg-security] use nosniff middleware
+2020-08-16 10:44:58,721 INFO 1728 [egg-security] use xssProtection middleware
+2020-08-16 10:44:58,721 INFO 1728 [egg-security] use xframe middleware
+2020-08-16 10:44:58,722 INFO 1728 [egg-security] use dta middleware
+2020-08-16 10:44:58,722 INFO 1728 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:44:58,732 INFO 1728 [egg:core] dump config after load, 5ms
+2020-08-16 10:44:58,749 INFO 1728 [egg-watcher:application] watcher start success
+2020-08-16 10:44:58,782 INFO 1728 [egg:core] dump config after ready, 5ms
+2020-08-16 10:49:37,939 INFO 1789 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:49:37,965 INFO 1789 [egg-multipart] stream mode enable
+2020-08-16 10:49:38,200 INFO 1789 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:49:38,202 INFO 1789 [egg-security] use methodnoallow middleware
+2020-08-16 10:49:38,202 INFO 1789 [egg-security] use noopen middleware
+2020-08-16 10:49:38,202 INFO 1789 [egg-security] use nosniff middleware
+2020-08-16 10:49:38,203 INFO 1789 [egg-security] use xssProtection middleware
+2020-08-16 10:49:38,203 INFO 1789 [egg-security] use xframe middleware
+2020-08-16 10:49:38,203 INFO 1789 [egg-security] use dta middleware
+2020-08-16 10:49:38,203 INFO 1789 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:49:38,216 INFO 1789 [egg:core] dump config after load, 6ms
+2020-08-16 10:49:38,254 INFO 1789 [egg-watcher:application] watcher start success
+2020-08-16 10:49:38,279 INFO 1789 [egg:core] dump config after ready, 8ms
+2020-08-16 10:51:14,316 INFO 1794 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:51:14,342 INFO 1794 [egg-multipart] stream mode enable
+2020-08-16 10:51:14,578 INFO 1794 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:51:14,580 INFO 1794 [egg-security] use methodnoallow middleware
+2020-08-16 10:51:14,580 INFO 1794 [egg-security] use noopen middleware
+2020-08-16 10:51:14,580 INFO 1794 [egg-security] use nosniff middleware
+2020-08-16 10:51:14,581 INFO 1794 [egg-security] use xssProtection middleware
+2020-08-16 10:51:14,581 INFO 1794 [egg-security] use xframe middleware
+2020-08-16 10:51:14,581 INFO 1794 [egg-security] use dta middleware
+2020-08-16 10:51:14,581 INFO 1794 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:51:14,594 INFO 1794 [egg:core] dump config after load, 7ms
+2020-08-16 10:51:14,612 INFO 1794 [egg-watcher:application] watcher start success
+2020-08-16 10:51:14,644 INFO 1794 [egg:core] dump config after ready, 5ms
+2020-08-16 10:52:12,120 INFO 1799 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:52:12,147 INFO 1799 [egg-multipart] stream mode enable
+2020-08-16 10:52:12,370 INFO 1799 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:52:12,372 INFO 1799 [egg-security] use methodnoallow middleware
+2020-08-16 10:52:12,373 INFO 1799 [egg-security] use noopen middleware
+2020-08-16 10:52:12,373 INFO 1799 [egg-security] use nosniff middleware
+2020-08-16 10:52:12,373 INFO 1799 [egg-security] use xssProtection middleware
+2020-08-16 10:52:12,374 INFO 1799 [egg-security] use xframe middleware
+2020-08-16 10:52:12,374 INFO 1799 [egg-security] use dta middleware
+2020-08-16 10:52:12,374 INFO 1799 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:52:12,386 INFO 1799 [egg:core] dump config after load, 7ms
+2020-08-16 10:52:12,403 INFO 1799 [egg-watcher:application] watcher start success
+2020-08-16 10:52:12,434 INFO 1799 [egg:core] dump config after ready, 5ms
+2020-08-16 10:53:59,474 INFO 1805 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:53:59,495 INFO 1805 [egg-multipart] stream mode enable
+2020-08-16 10:53:59,716 INFO 1805 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:53:59,718 INFO 1805 [egg-security] use methodnoallow middleware
+2020-08-16 10:53:59,718 INFO 1805 [egg-security] use noopen middleware
+2020-08-16 10:53:59,719 INFO 1805 [egg-security] use nosniff middleware
+2020-08-16 10:53:59,719 INFO 1805 [egg-security] use xssProtection middleware
+2020-08-16 10:53:59,719 INFO 1805 [egg-security] use xframe middleware
+2020-08-16 10:53:59,719 INFO 1805 [egg-security] use dta middleware
+2020-08-16 10:53:59,719 INFO 1805 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:53:59,728 INFO 1805 [egg:core] dump config after load, 4ms
+2020-08-16 10:53:59,745 INFO 1805 [egg-watcher:application] watcher start success
+2020-08-16 10:53:59,776 INFO 1805 [egg:core] dump config after ready, 6ms
+2020-08-16 10:54:07,597 INFO 1817 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:54:07,619 INFO 1817 [egg-multipart] stream mode enable
+2020-08-16 10:54:07,836 INFO 1817 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:54:07,838 INFO 1817 [egg-security] use methodnoallow middleware
+2020-08-16 10:54:07,838 INFO 1817 [egg-security] use noopen middleware
+2020-08-16 10:54:07,839 INFO 1817 [egg-security] use nosniff middleware
+2020-08-16 10:54:07,839 INFO 1817 [egg-security] use xssProtection middleware
+2020-08-16 10:54:07,839 INFO 1817 [egg-security] use xframe middleware
+2020-08-16 10:54:07,840 INFO 1817 [egg-security] use dta middleware
+2020-08-16 10:54:07,840 INFO 1817 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:54:07,849 INFO 1817 [egg:core] dump config after load, 4ms
+2020-08-16 10:54:07,874 INFO 1817 [egg-watcher:application] watcher start success
+2020-08-16 10:54:07,896 INFO 1817 [egg:core] dump config after ready, 4ms
+2020-08-16 10:56:56,469 INFO 1823 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 10:56:56,493 INFO 1823 [egg-multipart] stream mode enable
+2020-08-16 10:56:56,729 INFO 1823 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 10:56:56,731 INFO 1823 [egg-security] use methodnoallow middleware
+2020-08-16 10:56:56,731 INFO 1823 [egg-security] use noopen middleware
+2020-08-16 10:56:56,732 INFO 1823 [egg-security] use nosniff middleware
+2020-08-16 10:56:56,732 INFO 1823 [egg-security] use xssProtection middleware
+2020-08-16 10:56:56,732 INFO 1823 [egg-security] use xframe middleware
+2020-08-16 10:56:56,732 INFO 1823 [egg-security] use dta middleware
+2020-08-16 10:56:56,733 INFO 1823 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 10:56:56,743 INFO 1823 [egg:core] dump config after load, 5ms
+2020-08-16 10:56:56,760 INFO 1823 [egg-watcher:application] watcher start success
+2020-08-16 10:56:56,792 INFO 1823 [egg:core] dump config after ready, 5ms
+2020-08-16 11:00:47,970 INFO 2014 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 11:00:47,991 INFO 2014 [egg-multipart] stream mode enable
+2020-08-16 11:00:48,204 INFO 2014 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 11:00:48,206 INFO 2014 [egg-security] use methodnoallow middleware
+2020-08-16 11:00:48,207 INFO 2014 [egg-security] use noopen middleware
+2020-08-16 11:00:48,207 INFO 2014 [egg-security] use nosniff middleware
+2020-08-16 11:00:48,207 INFO 2014 [egg-security] use xssProtection middleware
+2020-08-16 11:00:48,208 INFO 2014 [egg-security] use xframe middleware
+2020-08-16 11:00:48,208 INFO 2014 [egg-security] use dta middleware
+2020-08-16 11:00:48,208 INFO 2014 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 11:00:48,218 INFO 2014 [egg:core] dump config after load, 5ms
+2020-08-16 11:00:48,243 INFO 2014 [egg-watcher:application] watcher start success
+2020-08-16 11:00:48,267 INFO 2014 [egg:core] dump config after ready, 7ms
+2020-08-16 11:03:50,525 INFO 2019 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 11:03:50,550 INFO 2019 [egg-multipart] stream mode enable
+2020-08-16 11:03:50,796 INFO 2019 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 11:03:50,798 INFO 2019 [egg-security] use methodnoallow middleware
+2020-08-16 11:03:50,798 INFO 2019 [egg-security] use noopen middleware
+2020-08-16 11:03:50,798 INFO 2019 [egg-security] use nosniff middleware
+2020-08-16 11:03:50,799 INFO 2019 [egg-security] use xssProtection middleware
+2020-08-16 11:03:50,799 INFO 2019 [egg-security] use xframe middleware
+2020-08-16 11:03:50,799 INFO 2019 [egg-security] use dta middleware
+2020-08-16 11:03:50,799 INFO 2019 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 11:03:50,813 INFO 2019 [egg:core] dump config after load, 8ms
+2020-08-16 11:03:50,832 INFO 2019 [egg-watcher:application] watcher start success
+2020-08-16 11:03:50,871 INFO 2019 [egg:core] dump config after ready, 5ms
+2020-08-16 11:05:59,821 INFO 2024 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 11:05:59,866 INFO 2024 [egg-multipart] stream mode enable
+2020-08-16 11:06:00,164 INFO 2024 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 11:06:00,166 INFO 2024 [egg-security] use methodnoallow middleware
+2020-08-16 11:06:00,166 INFO 2024 [egg-security] use noopen middleware
+2020-08-16 11:06:00,166 INFO 2024 [egg-security] use nosniff middleware
+2020-08-16 11:06:00,167 INFO 2024 [egg-security] use xssProtection middleware
+2020-08-16 11:06:00,167 INFO 2024 [egg-security] use xframe middleware
+2020-08-16 11:06:00,167 INFO 2024 [egg-security] use dta middleware
+2020-08-16 11:06:00,167 INFO 2024 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 11:06:00,178 INFO 2024 [egg:core] dump config after load, 4ms
+2020-08-16 11:06:00,197 INFO 2024 [egg-watcher:application] watcher start success
+2020-08-16 11:06:00,230 INFO 2024 [egg:core] dump config after ready, 5ms
+2020-08-16 11:08:54,098 INFO 2036 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 11:08:54,139 INFO 2036 [egg-multipart] stream mode enable
+2020-08-16 11:08:54,391 INFO 2036 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 11:08:54,393 INFO 2036 [egg-security] use methodnoallow middleware
+2020-08-16 11:08:54,393 INFO 2036 [egg-security] use noopen middleware
+2020-08-16 11:08:54,394 INFO 2036 [egg-security] use nosniff middleware
+2020-08-16 11:08:54,394 INFO 2036 [egg-security] use xssProtection middleware
+2020-08-16 11:08:54,394 INFO 2036 [egg-security] use xframe middleware
+2020-08-16 11:08:54,395 INFO 2036 [egg-security] use dta middleware
+2020-08-16 11:08:54,395 INFO 2036 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 11:08:54,406 INFO 2036 [egg:core] dump config after load, 5ms
+2020-08-16 11:08:54,424 INFO 2036 [egg-watcher:application] watcher start success
+2020-08-16 11:08:54,458 INFO 2036 [egg:core] dump config after ready, 5ms
+2020-08-16 11:10:11,551 INFO 2045 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2020-08-16 11:10:11,577 INFO 2045 [egg-multipart] stream mode enable
+2020-08-16 11:10:11,830 INFO 2045 [egg-static] starting static serve /public/ -> /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/public
+2020-08-16 11:10:11,832 INFO 2045 [egg-security] use methodnoallow middleware
+2020-08-16 11:10:11,833 INFO 2045 [egg-security] use noopen middleware
+2020-08-16 11:10:11,833 INFO 2045 [egg-security] use nosniff middleware
+2020-08-16 11:10:11,833 INFO 2045 [egg-security] use xssProtection middleware
+2020-08-16 11:10:11,834 INFO 2045 [egg-security] use xframe middleware
+2020-08-16 11:10:11,834 INFO 2045 [egg-security] use dta middleware
+2020-08-16 11:10:11,834 INFO 2045 [egg-security] compose 6 middlewares into one security middleware
+2020-08-16 11:10:11,845 INFO 2045 [egg:core] dump config after load, 5ms
+2020-08-16 11:10:11,864 INFO 2045 [egg-watcher:application] watcher start success
+2020-08-16 11:10:11,898 INFO 2045 [egg:core] dump config after ready, 5ms
