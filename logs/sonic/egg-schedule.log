@@ -1066,3 +1066,18 @@
 2020-08-16 11:10:11,577 INFO 2045 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
 2020-08-16 11:10:11,577 INFO 2045 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/clean_log.js
 2020-08-16 11:10:11,577 INFO 2045 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-08-16 11:23:53,384 INFO 2108 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-08-16 11:23:53,384 INFO 2108 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-08-16 11:23:53,384 INFO 2108 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-08-16 11:23:53,663 INFO 2107 [Timer] /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 61566339ms at 2020-08-17 04:30:00.002
+2020-08-16 11:23:53,663 INFO 2107 [Timer] /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 45366337ms at 2020-08-17 00:00:00.000
+2020-08-16 11:23:53,663 INFO 2107 [Timer] /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 45367337ms at 2020-08-17 00:00:01.000
+2020-08-16 14:04:13,213 INFO 2742 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-08-16 14:04:13,213 INFO 2742 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-08-16 14:04:13,213 INFO 2742 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-08-16 14:05:14,609 INFO 2751 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-08-16 14:05:14,609 INFO 2751 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-08-16 14:05:14,609 INFO 2751 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2020-08-16 16:21:55,280 INFO 2901 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2020-08-16 16:21:55,280 INFO 2901 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/clean_log.js
+2020-08-16 16:21:55,280 INFO 2901 [egg-schedule]: register schedule /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-logrotator/app/schedule/rotate_by_file.js

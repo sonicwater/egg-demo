@@ -50,9 +50,9 @@ class UserController extends Controller {
     const isValidUser = await ctx.service.user.validUser(username, password);
     if (isValidUser) {
       const token = app.jwt.sign({ username }, app.config.jwt.secret);
-      ctx.body = { code: 200, msg: '登录成功', token };
+      ctx.body = { code: 200, msg: '登录成功', data:{ token } };
     } else {
-      ctx.body = { code: 400, msg: '登录失败' };
+      ctx.body = { code: 400, msg: '登录失败', data:null };
     }
   }
 

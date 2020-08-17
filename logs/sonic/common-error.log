@@ -1277,3 +1277,19 @@ sql: "INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);"
 pid: 2014
 hostname: bogon
 
+2020-08-16 12:22:57,981 ERROR 2107 nodejs.ClusterClientNoResponseError: client no response in 1984108ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 2107
+hostname: bogon
+
+2020-08-16 12:30:39,739 ERROR 2107 nodejs.ClusterClientNoResponseError: client no response in 422345ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/cluster-client/lib/leader.js:77:23)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+name: "ClusterClientNoResponseError"
+pid: 2107
+hostname: bogon
+

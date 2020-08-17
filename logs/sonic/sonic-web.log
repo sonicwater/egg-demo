@@ -2297,3 +2297,71 @@ hostname: bogon
 2020-08-16 11:10:45,782 INFO 2045 [egg-sequelize](16ms) Executed (default): INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);
 2020-08-16 11:11:24,370 INFO 2045 [egg-sequelize](3ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
 2020-08-16 11:11:29,769 INFO 2045 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 11:23:53,649 INFO 2108 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-16 11:25:27,924 INFO 2108 [egg-sequelize](41ms) Executed (default): INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);
+2020-08-16 11:25:54,870 INFO 2108 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 11:25:58,478 INFO 2108 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 14:01:56,452 INFO 2108 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 14:04:13,628 INFO 2742 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-16 14:05:14,896 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-16 14:06:54,874 INFO 2751 [egg-sequelize](4ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 14:17:15,669 INFO 2751 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 14:18:08,420 INFO 2751 [egg-sequelize](2ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 14:18:39,976 WARN 2751 [-/::1/-/2ms GET /user/login] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 2751
+hostname: zhangmengdeMacBook-Pro.local
+
+2020-08-16 14:20:52,556 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 15:23:01,166 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 15:36:38,241 INFO 2751 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 15:37:14,792 INFO 2751 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:02:47,253 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:14:17,368 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:14:26,893 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:14:47,377 INFO 2751 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:17:42,781 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:20:32,392 INFO 2751 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:21:55,616 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-08-16 16:22:20,428 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:24:20,816 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:25:01,261 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:41:19,639 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:42:13,545 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:42:19,477 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:43:19,069 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:44:36,760 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:44:39,100 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:44:43,580 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:48:02,128 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 16:53:53,222 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 17:46:05,640 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-16 17:47:04,397 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-16 17:47:20,038 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
+2020-08-16 17:48:05,232 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
