@@ -16,4 +16,7 @@ module.exports = app => {
 
   // 新增
   router.put('/user', jwt, controller.user.create);
+
+  // 模拟返回xml格式数据
+  router.get('/xml', controller.xml.index);
 };

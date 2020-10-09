@@ -35,6 +35,11 @@ exports.passport = {
   package: 'egg-passport',
 };
 
+exports.ejs = {
+  enable: true,
+  package: 'egg-view-ejs',
+};
+
 
 // redis
 // exports.redis = {

@@ -1293,3 +1293,218 @@ name: "ClusterClientNoResponseError"
 pid: 2107
 hostname: bogon
 
+2020-09-24 10:59:38,168 ERROR 2103 [-/::1/-/5ms GET /xml] nodejs.ReferenceError: DOMParser is not defined
+    at XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:9:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 2103
+hostname: localhost
+
+2020-09-24 13:43:56,680 ERROR 2260 [-/::1/-/6ms GET /xml] nodejs.TypeError: ctx.setHeader is not a function
+    at XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 2260
+hostname: localhost
+
+2020-09-24 13:53:58,972 ERROR 2328 [-/::1/-/8ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2328
+hostname: localhost
+
+2020-09-24 13:54:16,499 ERROR 2328 [-/::1/-/2ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2328
+hostname: localhost
+
+2020-09-24 13:54:42,303 ERROR 2328 [-/::1/-/1ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2328
+hostname: localhost
+
+2020-09-24 13:55:06,533 ERROR 2333 [-/::1/-/8ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2333
+hostname: localhost
+
+2020-09-24 13:57:37,891 ERROR 2342 [-/::1/-/8ms GET /xml] nodejs.AssertionError: Can't find news from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:24:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2342
+hostname: localhost
+
+2020-09-24 14:08:20,055 ERROR 2358 [-/::1/-/7ms GET /xml] nodejs.AssertionError: Can't find news from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:24:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2358
+hostname: localhost
+
+2020-09-24 14:09:07,109 ERROR 2367 [-/::1/-/7ms GET /xml] nodejs.AssertionError: Can't find index.html from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:27:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2367
+hostname: localhost
+

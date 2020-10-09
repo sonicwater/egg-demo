@@ -110,6 +110,7 @@
         "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-jwt/config/locales",
         "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-sequelize/config/locales",
         "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/config/locales",
+        "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/locales",
         "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/locales",
         "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config/locales"
       ],
@@ -176,11 +177,15 @@
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view",
+      "root": [
+        "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view"
+      ],
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
-      "mapping": {}
+      "mapping": {
+        ".xml": "ejs"
+      }
     },
     "validate": {},
     "cors": {
@@ -206,6 +211,14 @@
       "port": "3306",
       "username": "root",
       "password": "<String len: 6>"
+    },
+    "ejs": {
+      "root": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view",
+      "cache": false,
+      "debug": false,
+      "compileDebug": true,
+      "delimiter": null,
+      "strict": false
     },
     "env": "local",
     "name": "sonic",
@@ -235,6 +248,7 @@
         "egg-scripts": "^2.11.0",
         "egg-sequelize": "^5.2.2",
         "egg-validate": "^2.0.2",
+        "egg-view-ejs": "^2.0.1",
         "lodash": "^4.17.20",
         "moment": "^2.27.0",
         "mysql2": "^2.1.0",
@@ -620,6 +634,19 @@
       "from": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config/plugin.js",
       "path": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport",
       "version": "2.1.1"
+    },
+    "ejs": {
+      "enable": true,
+      "package": "egg-view-ejs",
+      "name": "ejs",
+      "dependencies": [
+        "view"
+      ],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config/plugin.js",
+      "path": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs",
+      "version": "2.0.1"
     }
   }
 }

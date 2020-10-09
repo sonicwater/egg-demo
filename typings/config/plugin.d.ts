@@ -20,6 +20,7 @@ import 'egg-mysql';
 import 'egg-jwt';
 import 'egg-sequelize';
 import 'egg-passport';
+import 'egg-view-ejs';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -41,5 +42,6 @@ declare module 'egg' {
     jwt?: EggPluginItem;
     sequelize?: EggPluginItem;
     passport?: EggPluginItem;
+    ejs?: EggPluginItem;
   }
 }

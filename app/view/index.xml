@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oauth>
+  <status>200</status>
+  <data>
+    <% for( let i = 0; i < lists.length; i++ ) { %>
+      <list> <name><%=lists[i].name%></name> </list>
+    <% } %>
+  </data>
+  <message>Success</message>
+</oauth>

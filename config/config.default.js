@@ -51,6 +51,12 @@ module.exports = appInfo => {
     formLimit: '1mb',
   };
 
+  config.view = {
+    mapping: {
+      '.xml': 'ejs',
+    },
+  };
+
   // config.news = {
   //   pageSize: 5,
   //   serverUrl: 'https://hacker-news.firebaseio.com/v0',

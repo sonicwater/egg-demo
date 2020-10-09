@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21d4d883-1eba-406e-8ff8-683ca613ab8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sonic/common-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sonic/common-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sonic/egg-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sonic/egg-agent.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sonic/egg-schedule.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sonic/egg-schedule.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sonic/egg-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sonic/egg-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/sonic/sonic-web.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sonic/sonic-web.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/egg-bin/node_modules/egg-ts-helper/.tmp/eggInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/egg-bin/node_modules/egg-ts-helper/.tmp/eggInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/agent_timing_2012.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/application_timing_2014.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/application_timing_2019.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/application_timing_2024.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/application_timing_2036.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/application_timing_2045.json" beforeDir="false" />
-    </list>
+    <list default="true" id="21d4d883-1eba-406e-8ff8-683ca613ab8c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -30,7 +15,7 @@
     <session id="-1423758742">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />

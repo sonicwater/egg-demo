@@ -80,6 +80,15 @@
     },
     "onerror": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js"
   },
+  "view": {
+    "mapping": {
+      ".xml": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config/config.default.js"
+    },
+    "root": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js"
+  },
   "validate": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config/config.default.js",
   "sequelize": {
     "dialect": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config/config.default.js",
@@ -172,13 +181,6 @@
     "buffer": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-static/config/config.default.js",
     "maxFiles": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-static/config/config.default.js"
   },
-  "view": {
-    "root": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js",
-    "cache": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js",
-    "defaultViewEngine": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js",
-    "mapping": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/config/config.default.js"
-  },
   "mysql": {
     "default": {
       "database": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-mysql/config/config.default.js",
@@ -186,6 +188,14 @@
     },
     "app": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-mysql/config/config.default.js",
     "agent": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-mysql/config/config.default.js"
+  },
+  "ejs": {
+    "root": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/config.default.js",
+    "cache": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/config.local.js",
+    "debug": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/config.default.js",
+    "compileDebug": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/config.default.js",
+    "delimiter": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/config.default.js",
+    "strict": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view-ejs/config/config.default.js"
   },
   "env": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
   "name": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
@@ -214,6 +224,7 @@
       "egg-scripts": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
       "egg-sequelize": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
+      "egg-view-ejs": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
       "lodash": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
       "moment": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",
       "mysql2": "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/config/config.default.js",

@@ -2365,3 +2365,327 @@ hostname: zhangmengdeMacBook-Pro.local
 2020-08-16 17:47:04,397 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
 2020-08-16 17:47:20,038 INFO 2901 [egg-sequelize](0ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
 2020-08-16 17:48:05,232 INFO 2901 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-08-23 18:57:20,474 INFO 5382 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:22:21,271 INFO 1770 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:23:38,905 INFO 1963 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:23:45,645 INFO 1968 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:23:46,717 INFO 1969 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:23:52,920 INFO 1972 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:23:53,972 INFO 1973 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:24:53,725 INFO 1997 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:25:35,993 INFO 2006 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:25:56,233 WARN 2006 [-/::1/-/1ms GET /xml] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 2006
+hostname: localhost
+
+2020-09-24 10:26:32,675 INFO 2016 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:27:48,119 INFO 2016 [egg-sequelize](40ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-09-24 10:28:24,683 INFO 2016 [egg-sequelize](134ms) Executed (default): INSERT INTO `user` (`user_id`,`name`,`password`) VALUES (?,?,?);
+2020-09-24 10:29:24,073 INFO 2034 [egg-sequelize](2ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:29:24,934 WARN 2034 [-/::1/-/5ms GET /xml] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 2034
+hostname: localhost
+
+2020-09-24 10:32:35,713 INFO 2051 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:38:33,576 INFO 2069 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:58:56,647 INFO 2099 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:59:08,228 INFO 2103 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 10:59:38,168 ERROR 2103 [-/::1/-/5ms GET /xml] nodejs.ReferenceError: DOMParser is not defined
+    at XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:9:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 2103
+hostname: localhost
+
+2020-09-24 11:00:45,085 INFO 2107 [egg-sequelize](3ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:03:36,716 INFO 2113 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:04:59,232 INFO 2117 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:05:40,049 INFO 2121 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:05:46,211 INFO 2124 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:06:53,693 INFO 2128 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:07:25,233 INFO 2132 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:08:29,025 INFO 2136 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:08:34,433 INFO 2140 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:09:14,029 INFO 2144 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 11:18:36,071 INFO 2149 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:43:36,270 INFO 2255 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:43:38,259 INFO 2257 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:43:39,309 INFO 2260 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:43:56,680 ERROR 2260 [-/::1/-/6ms GET /xml] nodejs.TypeError: ctx.setHeader is not a function
+    at XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:9)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:45:18)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:44:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@eggjs/router/lib/router.js:195:33)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at fn (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-core/lib/loader/mixin/middleware.js:111:29)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportSession (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:59:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at passportInitialize (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-passport/lib/framework.js:36:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 2260
+hostname: localhost
+
+2020-09-24 13:53:55,879 INFO 2328 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:53:58,972 ERROR 2328 [-/::1/-/8ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2328
+hostname: localhost
+
+2020-09-24 13:54:16,499 ERROR 2328 [-/::1/-/2ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2328
+hostname: localhost
+
+2020-09-24 13:54:42,304 ERROR 2328 [-/::1/-/1ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2328
+hostname: localhost
+
+2020-09-24 13:55:05,594 INFO 2333 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:55:06,534 ERROR 2333 [-/::1/-/8ms GET /xml] nodejs.AssertionError: Can't find template from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:21:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2333
+hostname: localhost
+
+2020-09-24 13:56:32,502 INFO 2342 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 13:57:37,891 ERROR 2342 [-/::1/-/8ms GET /xml] nodejs.AssertionError: Can't find news from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:24:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2342
+hostname: localhost
+
+2020-09-24 14:07:48,723 INFO 2358 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:08:20,055 ERROR 2358 [-/::1/-/7ms GET /xml] nodejs.AssertionError: Can't find news from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:24:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2358
+hostname: localhost
+
+2020-09-24 14:09:03,618 INFO 2367 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:09:07,109 ERROR 2367 [-/::1/-/7ms GET /xml] nodejs.AssertionError: Can't find index.html from /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/view
+    at Map.resolve (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/view_manager.js:74:5)
+    at async ContextView.[contextView#render] (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-view/lib/context_view.js:50:22)
+    at async XmlController.index (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/controller/xml.js:27:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-bodyparser/index.js:95:5)
+    at async /Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/zhangmeng/Documents/z_node_learn/egg-sonic/node_modules/@koa/cors/index.js:56:32)
+generatedMessage: false
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2367
+hostname: localhost
+
+2020-09-24 14:12:10,597 INFO 2376 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:12:15,704 INFO 2381 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:16:05,407 INFO 2387 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:18:01,347 INFO 2390 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:20:12,729 INFO 2394 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:22:19,905 INFO 2407 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:22:21,026 INFO 2408 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-09-24 14:37:11,768 INFO 2416 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-10-09 17:18:49,695 INFO 8827 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-10-09 17:24:47,599 INFO 8827 [egg-sequelize](24ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users`;
+2020-10-09 17:29:36,924 INFO 8827 [egg-sequelize](1ms) Executed (default): SELECT `user_id`, `name`, `password`, `real_name`, `user_role`, `headimg`, `login_time` FROM `user` AS `Users` WHERE `Users`.`user_id` = '57c4dda0b42511e999baa1190ae09435';
