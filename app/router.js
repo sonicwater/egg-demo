@@ -10,8 +10,10 @@ module.exports = app => {
   router.post('/user/login', controller.user.login);
   // router.post('/user', jwt, controller.user.index);
 
-  // 查询 不做鉴权
+  // 获取全部用户数据 不做鉴权
   router.get('/user', controller.user.index);
+
+  // 获取单独某一条用户数据，加权鉴
   router.get('/user/:id', jwt, controller.user.show);
 
   // 新增

@@ -6,7 +6,7 @@
 ```bash
 $ npm i
 $ npm run dev
-$ open http://localhost:7001/
+$ open localhost:7001/
 ```
 ## 部署
 ```bash
@@ -29,8 +29,8 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 #### 可用postman测试
-- 先用put方式请求http://127.0.0.1:7001/user，创建一个用户，body传参username和password,创建一条用户记录
-- 然后post方式请求http://127.0.0.1:7001/user/login，调用登陆接口，body传参username和password就是刚才创建的用户名和密码,登陆成功后返回json格式如下：
+- 先用put方式请求 /user，创建一个用户，body传参username和password,创建一条用户记录
+- 然后post方式请求 /user/login，调用登陆接口，body传参username和password就是刚才创建的用户名和密码,登陆成功后返回json格式如下：
  ```javascript
  {
     "code": 200,
@@ -41,8 +41,8 @@ CREATE TABLE `user` (
 }
  ```
  data中返回标准格式的token
- - 用get方式请求http://127.0.0.1:7001/user接口，获取全部用户表数据。此接口没加权鉴。
- - 用get方式请求http://127.0.0.1:7001/user/:id，获取某一条用户数据，此接口加了权鉴，Headers部分要传Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRvbmciLCJpYXQiOjE2MDIyOTkyNDd9.28iIiOfW8sZkbWtAyCAB0VtGeJZVT-YSFPqJAwlNsVY
+ - 用get方式请求 /user接口，获取全部用户表数据。此接口没加权鉴。
+ - 用get方式请求 /user/:id，获取某一条用户数据，此接口加了权鉴，Headers部分要传Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRvbmciLCJpYXQiOjE2MDIyOTkyNDd9.28iIiOfW8sZkbWtAyCAB0VtGeJZVT-YSFPqJAwlNsVY
  Bearer后面加一个空格再加之前登陆成功后返回的token，路由中的:id部分传的是用户表中此用户的user_id字段。
 
 ### 关于如何加权鉴
