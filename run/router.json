@@ -83,7 +83,6 @@
     "path": "/user",
     "regexp": "/^\\/user(?:\\/(?=$))?$/",
     "stack": [
-      "middleware",
       "wrappedController"
     ]
   },

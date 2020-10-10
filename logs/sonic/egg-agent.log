@@ -2296,3 +2296,29 @@ hostname: bogon
 2020-10-09 17:18:48,453 INFO 8826 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app.js"
 2020-10-09 17:18:48,454 INFO 8826 [egg-watcher:agent] watcher start success
 2020-10-09 17:18:48,522 INFO 8826 [egg:core] dump config after ready, 8ms
+2020-10-09 17:35:00,774 INFO 8927 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-10-09 17:35:00,512 INFO 8927 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-10-09 17:35:00,708 INFO 8927 [egg:core] dump config after load, 4ms
+2020-10-09 17:35:00,738 INFO 8927 [egg-watcher] Start watching: ["/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks_proxy","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app.js"]
+2020-10-09 17:35:00,738 INFO 8927 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app"
+2020-10-09 17:35:00,738 INFO 8927 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config"
+2020-10-09 17:35:00,738 INFO 8927 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks"
+2020-10-09 17:35:00,738 INFO 8927 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks_proxy"
+2020-10-09 17:35:00,739 INFO 8927 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app.js"
+2020-10-09 17:35:00,739 INFO 8927 [egg-watcher:agent] watcher start success
+2020-10-09 17:35:00,784 INFO 8927 [egg:core] dump config after ready, 8ms
+2020-10-10 11:01:02,283 INFO 2098 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2020-10-10 11:01:01,881 INFO 2098 [egg:logger] init all loggers with options: {"dir":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/logs/sonic","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"sonic-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2020-10-10 11:01:02,198 INFO 2098 [egg:core] dump config after load, 4ms
+2020-10-10 11:01:02,242 INFO 2098 [egg-watcher] Start watching: ["/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks_proxy","/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app.js"]
+2020-10-10 11:01:02,242 INFO 2098 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app"
+2020-10-10 11:01:02,242 INFO 2098 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/config"
+2020-10-10 11:01:02,242 INFO 2098 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks"
+2020-10-10 11:01:02,243 INFO 2098 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/mocks_proxy"
+2020-10-10 11:01:02,243 INFO 2098 [egg-watcher] Start watching: "/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app.js"
+2020-10-10 11:01:02,243 INFO 2098 [egg-watcher:agent] watcher start success
+2020-10-10 11:01:02,294 INFO 2098 [egg:core] dump config after ready, 9ms
+2020-10-10 11:01:41,859 WARN 2098 [agent:development] reload worker because /Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/router.js change
+2020-10-10 11:01:41,289 INFO 2098 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/router.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":8625508919,"size":605,"blocks":8,"atimeMs":1602236073711.287,"mtimeMs":1602298901227.5708,"ctimeMs":1602298901227.5708,"birthtimeMs":1597402895885.4983,"atime":"2020-10-09T09:34:33.711Z","mtime":"2020-10-10T03:01:41.228Z","ctime":"2020-10-10T03:01:41.228Z","birthtime":"2020-08-14T11:01:35.885Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-10-10 11:01:41,464 INFO 2098 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/router.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":8625508919,"size":605,"blocks":8,"atimeMs":1602236073711.287,"mtimeMs":1602298901453.4204,"ctimeMs":1602298901453.4204,"birthtimeMs":1597402895885.4983,"atime":"2020-10-09T09:34:33.711Z","mtime":"2020-10-10T03:01:41.453Z","ctime":"2020-10-10T03:01:41.453Z","birthtime":"2020-08-14T11:01:35.885Z"},"remove":false,"isDirectory":false,"isFile":true}
+2020-10-10 11:01:41,654 INFO 2098 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/zhangmeng/Documents/z_node_learn/egg-sonic/app/router.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":8625508919,"size":605,"blocks":8,"atimeMs":1602236073711.287,"mtimeMs":1602298901642.9966,"ctimeMs":1602298901642.9966,"birthtimeMs":1597402895885.4983,"atime":"2020-10-09T09:34:33.711Z","mtime":"2020-10-10T03:01:41.643Z","ctime":"2020-10-10T03:01:41.643Z","birthtime":"2020-08-14T11:01:35.885Z"},"remove":false,"isDirectory":false,"isFile":true}
